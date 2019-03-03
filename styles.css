@@ -94,7 +94,8 @@ footer .logo {
 #weather {
 	position: absolute;
 	top: 50px;
-	left: 550px;
+	/* left: 550px; */
+	right: 365px;
 }
 
 #weather span {
@@ -104,11 +105,35 @@ footer .logo {
 }
 
 #search {
+	display: flex;
+	justify-content: space-between;
 	position: absolute;
 	top: 40px;
 	right: 0;
 	width: 300px;
-	padding: 16px 0 18px 20px;
+	padding: 13px 18px;
+	border: none;
+	border-radius: 23px;
+	background-color: rgba(235,235,235, .6);
+	opacity: 0.55;
+}
+
+#search input[type=text] {
+	background: transparent;
+	border: none;
+}
+
+#search button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+}
+
+.icon-search {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('img/search.png');
 }
 
 #menu-container {
